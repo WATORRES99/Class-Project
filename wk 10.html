@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container">
+    <br>
+    <br>
+    <br>
+    <h2 style="text-align: center;">Requested Time Off and Purpose</h2>
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class = "col-sm">
+                    <div class="form-group">
+                        <label form="Start Date">Start Date</label>
+                        <input type = "date" class="form-control" id="new-start-date">
+                    </div>
+                </div>
+                <div class = "col-sm">
+                    <div class="form-group">
+                        <label form="End Date">End Date</label>
+                        <input type = "date" class="form-control" id="new-end-date">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label form="new-request">Request</label>
+                        <input type = "text" class="form-control" id="new-request" placeholder="Request">
+                    </div>
+                </div>
+            </div>
+            <button id="add" class="btn btn-primary form-control">Create</button>
+        </div>
+    </div>
+    <table id="list" class="table table-dark table-striped">
+        <tr>
+            <th>Request</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Actions</th>
+        </tr>
+    </table>
+
+
+    <script src="wk 10.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
